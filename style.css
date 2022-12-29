@@ -1,0 +1,198 @@
+/* https://developer.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/ */
+.offscreen {
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* font is loaded locally. You can use these fonts in the template */
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-ExtraLight.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Light.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url('./fonts/Oswald/Oswald-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Light.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-color: lightgrey;
+  color: white;
+}
+
+header,
+main {
+  margin-top: 0;
+}
+
+header {
+  display: contents;
+}
+
+.image-container-1 {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+  top: 0;
+  justify-content: center;
+  align-content: center;
+}
+
+.image-container-2 {
+  display: flex;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 120vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.header-a {
+  width: 250px;
+  float: left;
+  margin-left: 15vw;
+  position: relative;
+}
+
+.header-b {
+  width: 250px;
+  float: right;
+  margin-right: 15vw;
+  text-align: end;
+  position: relative;
+}
+
+.horizontal-line {
+  position: relative;
+  color: white;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.organic-logo {
+  display: flex;
+  margin-left: 15vw;
+  width: 200px;
+  justify-content: left;
+}
+
+.banner-logo {
+  display: flex;
+  width: 150px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: right;
+  margin-right: 15vw;
+}
+
+.menu-item {
+  display: inline;
+  padding: 0 5px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.shop-now-button {
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  color: white;
+  background-color: rgb(106, 255, 47);
+  text-align: center;
+  cursor: pointer;
+}
+
+.shop-now-button:hover {
+  width: 200px;
+  height: 50px;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+}
