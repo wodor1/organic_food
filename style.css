@@ -66,7 +66,6 @@
 body {
   font-weight: 300;
   font-family: 'Oswald', sans-serif;
-  width: 100%;
   padding: 0;
   margin: 0 auto;
   background-color: lightgrey;
@@ -80,6 +79,10 @@ main {
 
 header {
   display: contents;
+}
+
+.containerz {
+  object-fit: cover;
 }
 
 .image-container-1 {
@@ -99,7 +102,7 @@ header {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  top: 120vh;
+  top: 1400px;
   justify-content: center;
   align-content: center;
 }
@@ -148,6 +151,7 @@ main {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 ul {
@@ -160,6 +164,7 @@ ul {
   display: flex;
   justify-content: right;
   margin-right: 15vw;
+  margin-top: -35px;
 }
 
 .menu-item {
@@ -184,15 +189,59 @@ ul {
 }
 
 .shop-now-button:hover {
-  width: 200px;
-  height: 50px;
+  width: 185px;
+  height: 40px;
 }
 
 h2 {
   font-weight: 300;
 }
 
+.main-content {
+  background-color: lightgrey;
+  margin-top: 250px;
+  padding-top: 50px;
+  height: 250px;
+  color: black;
+  font-weight: 500;
+}
+
+.card-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+  margin: 0 auto;
+  padding-left: 25vw;
+  margin-top: 50px;
+  color: black;
+}
+
+.card {
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 350px;
+  width: 250px;
+  margin: 25px;
+}
+
+.card:hover {
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 35px 16px;
+}
+
 footer {
   position: relative;
   text-align: center;
+  background-color: lightgrey;
+  color: black;
+  height: 400px;
+  margin-top: 1050px;
+  padding-top: 50px;
+  font-weight: 400;
 }
